@@ -51,7 +51,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
 
-	<?php //wp_nav_menu( array('theme_location' => 'top', 'menu_class'=> 'col-lg-12 navbar-nav',   'menu_id'        => 'top-menu',) ); ?>
+	<?php wp_nav_menu( array('theme_location' => 'top', 'menu_class'=> 'col-lg-12 navbar-nav',   'menu_id'        => 'top-menu',) ); ?>
 	  
 	  
   </div>
