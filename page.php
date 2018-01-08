@@ -59,8 +59,9 @@ get_header(); ?>
 			  				if( ($i % 3 ) == 0 ){
 			  					echo '<div class="carousel-item '.$active.'">';
 			  				}
-
+			  				echo '<div class="image-item">';
 				  			echo '<img class="col-4" src="'.$url_image.'" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
+				  			echo '</div>';
 
 				  			if( ($i % 3 ) == 2 ){
 				  				echo '</div>';

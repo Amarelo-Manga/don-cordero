@@ -59,10 +59,12 @@ get_header(); ?>
 			  				$active = ( $i==0 ? ' ' : 'active' );
 
 			  				if( ($i % 3 ) == 0 ){
-			  					echo '<div class="carousel-item '.$active.'">';
+			  					echo '<div class="carousel-item row '.$active.'">';
 			  				}
 
-				  			echo '<img class="col-4" src="'.$url_image.'" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
+				  			echo '<div class="image-item col-4" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
+				  			echo '<img  src="'.$url_image.'">';
+				  			echo '</div>';
 
 				  			if( ($i % 3 ) == 2 ){
 				  				echo '</div>';
