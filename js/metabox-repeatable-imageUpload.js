@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
 		// Create the media frame.
 		file_frame = wp.media.frames.file_frame = wp.media({
-		  title: jQuery( this ).data( 'uploader_title' ),
+		  title: jQuery( this ).data( 'uploader_title' ),	
 		  button: {
 		    text: jQuery( this ).data( 'uploader_button_text' ),
 		  },
@@ -21,8 +21,8 @@ jQuery(document).ready(function($) {
 		file_frame.on( 'select', function() {
 		  var attachment = file_frame.state().get('selection').first().toJSON();
 		  jQuery( "#"+field_id).val(attachment.id);
-		  jQuery( "#repeatable-fieldset-one img#"+image_id).attr('src',attachment.url);
-		  jQuery( '#repeatable-fieldset-one img#'+image_id).show();
+		  jQuery( "img#"+image_id).attr('src',attachment.url);
+		  jQuery( 'img#'+image_id).show();
 		});
 
 		// Finally, open the modal

@@ -9,7 +9,7 @@
  
 add_action('admin_init', 'add_meta_boxes', 1);
 function add_meta_boxes() {
-	add_meta_box( 'repeatable_images', 'Galeria', 'repeatable_meta_box_display', 'page', 'normal', 'default');
+	add_meta_box( 'repeatable_images', 'Galeria', 'repeatable_meta_box_display', 'page', 'side', 'default');
 }
 
 function repeatable_meta_box_display() {
@@ -27,7 +27,6 @@ function repeatable_meta_box_display() {
 	<thead>
 		<tr>
 			<th width="50%">Imagens</th>
-			<th width="50%">Ações</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -43,16 +42,15 @@ function repeatable_meta_box_display() {
 				$image_id =  $field['images'];
 				$url_image = wp_get_attachment_url( $image_id ); 
 			?>
-			<img src="<?php echo $url_image; ?>" style="max-width:300px;max-height: 300px;" class="upload_image" id="upload_image<?php echo $image_id; ?>" />
+			<img src="<?php echo $url_image; ?>" style="max-width:250px;max-height: 300px;" class="upload_image" id="upload_image<?php echo $image_id; ?>" />
 			<input type="hidden" id="upload_image<?php echo $image_id; ?>_input" class="upload_image_input" name="_images_gallery[]" value="<?php echo $image_id; ?>" />
 
-		</td>
-		<td>
 			<p class="hide-if-no-js">
 				<a title="Set listing image" href="javascript:;" id="upload_image<?php echo $image_id; ?>_button" data-uploader_title="Choose an image" class="button custom_upload_image_button" data-uploader_button_text="Set listing image">Escolher Imagem</a>
+				<a class="button remove-row" href="#">Remover</a>
 			</p>
+			
 		</td>
-		<td><a class="button remove-row" href="#">Remover</a></td>
 	</tr>
 	<?php
 	}
@@ -61,15 +59,13 @@ function repeatable_meta_box_display() {
 	?>
 	<tr>
 		<td>
-			<img src="" style="max-width:300px;max-height: 300px;" class="upload_image" id="upload_image" />
+			<img src="" style="max-width:250px;max-height: 300px;" class="upload_image" id="upload_image" />
 			<input type="hidden" id="upload_image_input" class="upload_image_input" name="_images_gallery[]" value="" />
-		</td>
-		<td>
 			<p class="hide-if-no-js">
 				<a title="Set listing image" href="javascript:;" id="upload_image_button" data-uploader_title="Choose an image" class="button custom_upload_image_button" data-uploader_button_text="Set listing image">Escolher Imagem</a>
+				<a class="button remove-row" href="#">Remover</a>
 			</p>
 		</td>
-		<td><a class="button remove-row" href="#">Remover</a></td>
 	</tr>
 	<?php endif; ?>
 	
@@ -78,14 +74,11 @@ function repeatable_meta_box_display() {
 		<td>
 			<img src="" style="max-width:300px;max-height: 300px;" class="upload_image" id="upload_image_hidden" />
 			<input type="hidden" id="upload_image_input_hidden" class="upload_image_input" name="_images_gallery[]" value="" />
-		</td>
-		<td>
 			<p class="hide-if-no-js">
 				<a title="Set listing image" href="javascript:;" id="upload_image_button" data-uploader_title="Choose an image" class="button custom_upload_image_button" data-uploader_button_text="Set listing image">Escolher Imagem</a>
+				<a class="button remove-row" href="#">Remover</a>
 			</p>
 		</td>
-	
-		<td><a class="button remove-row" href="#">Remover</a></td>
 	</tr>
 	</tbody>
 	</table>
