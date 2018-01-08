@@ -27,6 +27,7 @@ function listing_image_metabox ( $post ) {
 	
 	$banner_image = get_post_meta( $post->ID, '_banner_page', true );
 
+
     if( isset( $banner_image["texto"] ) ) {
     	$texto = $banner_image["texto"];
     }else{
@@ -35,7 +36,6 @@ function listing_image_metabox ( $post ) {
 
 
 	if ( $banner_image ) {
-
 		$image_id = $banner_image['image'];
     	$image_url = wp_get_attachment_url( $image_id );
 
@@ -61,8 +61,8 @@ function listing_image_metabox ( $post ) {
 
 	//Add Text Area com Editor
 	$settings = array( 'media_buttons' => false, 'tinymce' => true, 'textarea_rows'=> 6 );
-	wp_editor( $texto , "_banner_texto", $settings );
-}
+		wp_editor( $texto, "_banner_texto", $settings );
+	}
 
 add_action( 'save_post', 'banner_page_save', 10, 1 );
 function banner_page_save ( $post_id ) {
