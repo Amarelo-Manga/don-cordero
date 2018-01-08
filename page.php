@@ -30,7 +30,7 @@ get_header(); ?>
 		</div>
 	</div>
 	<div id="primary" class="content-area container">
-		<main id="main" class="site-main" role="main">
+		<div class="row">
 			<div class="col-6">
 				<?php
 					the_title();
@@ -40,7 +40,7 @@ get_header(); ?>
 			<div class="col-4">
 				<?php the_post_thumbnail();  ?>
 			</div>
-		</main><!-- #main -->
+		</div>
 	</div><!-- #primary -->
 	<div id="galeria">
 		<?php
