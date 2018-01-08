@@ -72,7 +72,7 @@ function repeatable_meta_box_display() {
 	<!-- empty hidden one for jQuery -->
 	<tr class="empty-row screen-reader-text">
 		<td>
-			<img src="" style="max-width:300px;max-height: 300px;" class="upload_image" id="upload_image_hidden" />
+			<img src="" style="max-width:250px;max-height: 300px;" class="upload_image" id="upload_image_hidden" />
 			<input type="hidden" id="upload_image_input_hidden" class="upload_image_input" name="_images_gallery[]" value="" />
 			<p class="hide-if-no-js">
 				<a title="Set listing image" href="javascript:;" id="upload_image_button" data-uploader_title="Choose an image" class="button custom_upload_image_button" data-uploader_button_text="Set listing image">Escolher Imagem</a>
