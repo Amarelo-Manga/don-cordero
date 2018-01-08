@@ -571,12 +571,24 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 
 
-// Add Upload Image
+
+/**
+ * Metabox Upload de Images for Metabox
+ */
 wp_enqueue_script('metabox-imageUpload', get_template_directory_uri().'/js/metabox-repeatable-imageUpload.js');
 
 /**
- * Metabox Reeatable Images Pages
+ * Metaboxes Banner
+ */
+require get_template_directory() . '/inc/metaboxes/banner-page.php';
+
+
+/**
+ * Metabox Repeatable Images Pages
  */
 require get_template_directory() . '/inc/metaboxes/repeatable-images.php';
+
+
+
 
 
