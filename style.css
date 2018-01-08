@@ -168,3 +168,13 @@ section.cozinha {margin-top: 65px;}
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited .ui-state-default a:hover {text-decoration: none; background-color: #444e68;  color: #97999e;  font-size: 15px;  padding: 1em 2.2em !important;  border: 0 !important;  font-weight: 100;}
 
 .banner_cardapio{  background-image: url(img/bg_page_cardapio.jpg); background-size: cover; padding-top: 6.5rem; color: #FFFFFF;  margin-top: -118px; height: 419px;}
+
+
+
+
+/* Page */
+#galeria{background: #444e68;padding: 20px 0px;}
+#banner{background-size: cover;padding: 150px 0px;top: -60px;position: relative;}
+#banner h3{font-family: 'molleregular' !important;color: #f0c61b;font-weight: 100;font-size: 2.5em;}
+#banner h4{color: #fff;font-family: 'proxima_novaextrabold' !important;font-size: 2.5em;}
+#banner p{color:#fff;}
