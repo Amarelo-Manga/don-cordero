@@ -8,12 +8,6 @@ jQuery(document).ready(function($) {
 		var field_id = button_id.replace( '_button', '_input' );
 		var image_id = button_id.replace("_button", "");
 
-		// If the media frame already exists, reopen it.
-		// if ( file_frame ) {
-		//   file_frame.open();
-		//   return;
-		// }
-
 		// Create the media frame.
 		file_frame = wp.media.frames.file_frame = wp.media({
 		  title: jQuery( this ).data( 'uploader_title' ),
@@ -23,37 +17,22 @@ jQuery(document).ready(function($) {
 		  multiple: false
 		});
 
-		
-
 		// When an image is selected, run a callback.
 		file_frame.on( 'select', function() {
 		  var attachment = file_frame.state().get('selection').first().toJSON();
 		  jQuery( "#"+field_id).val(attachment.id);
 		  jQuery( "#repeatable-fieldset-one img#"+image_id).attr('src',attachment.url);
 		  jQuery( '#repeatable-fieldset-one img#'+image_id).show();
-		  jQuery( '#' + button_id ).attr( 'id', 'remove_listing_image_button' );
-		  jQuery( '#remove_listing_image_button' ).text( 'Remove listing image' );
 		});
 
 		// Finally, open the modal
 		file_frame.open();
 	};
 
-
 	$('.custom_upload_image_button').on( 'click', function( event ) {
 		event.preventDefault();
 		jQuery.fn.upload_listing_image( jQuery(this) );
 	});
-
-	jQuery('#listingimagediv').on( 'click', '#remove_listing_image_button', function( event ) {
-		event.preventDefault();
-		jQuery( '#upload_listing_image' ).val( '' );
-		jQuery( '#listingimagediv img' ).attr( 'src', '' );
-		jQuery( '#listingimagediv img' ).hide();
-		jQuery( this ).attr( 'id', 'upload_listing_image_button' ); // upload_listing_image_button -> upload_image_button
-		jQuery( '#upload_listing_image_button' ).text( 'Set listing image' ); // upload_listing_image_button -> upload_image_button
-	});
-
 
 	// Repeatable
 	$( '#add-row' ).on('click', function() {

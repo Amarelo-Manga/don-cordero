@@ -9,13 +9,13 @@
  
 add_action('admin_init', 'add_meta_boxes', 1);
 function add_meta_boxes() {
-	add_meta_box( 'repeatable-fields', 'Repeatable Fields', 'repeatable_meta_box_display', 'page', 'normal', 'default');
+	add_meta_box( 'repeatable_images', 'Galeria', 'repeatable_meta_box_display', 'page', 'normal', 'default');
 }
 
 function repeatable_meta_box_display() {
 	global $post;
 
-	$repeatable_fields = get_post_meta( $post->ID, 'repeatable_fields', true );
+	$repeatable_images = get_post_meta( $post->ID, 'repeatable_images', true );
 
 	wp_nonce_field( 'repeatable_meta_box_nonce', 'repeatable_meta_box_nonce' );
 ?>
@@ -26,15 +26,16 @@ function repeatable_meta_box_display() {
 	<table id="repeatable-fieldset-one" width="100%">
 	<thead>
 		<tr>
-			<th width="50%">Images</th>
+			<th width="50%">Imagens</th>
+			<th width="50%">Ações</th>
 		</tr>
 	</thead>
 	<tbody>
 	<?php
 	
-	if ( $repeatable_fields ) :
+	if ( $repeatable_images ) :
 	
-	foreach ( $repeatable_fields as $field ) {
+	foreach ( $repeatable_images as $field ) {
 	?>
 	<tr>
 		<td>
@@ -105,7 +106,7 @@ function repeatable_meta_box_save($post_id) {
 	if (!current_user_can('edit_post', $post_id))
 		return;
 	
-	$old = get_post_meta($post_id, 'repeatable_fields', true);
+	$old = get_post_meta($post_id, 'repeatable_images', true);
 	$new = array();
 	
 	$images = $_POST['_images_gallery'];
@@ -119,8 +120,8 @@ function repeatable_meta_box_save($post_id) {
 	}
 
 	if ( !empty( $new ) && $new != $old )
-		update_post_meta( $post_id, 'repeatable_fields', $new );
+		update_post_meta( $post_id, 'repeatable_images', $new );
 	elseif ( empty($new) && $old )
-		delete_post_meta( $post_id, 'repeatable_fields', $old );
+		delete_post_meta( $post_id, 'repeatable_images', $old );
 }
 ?>
