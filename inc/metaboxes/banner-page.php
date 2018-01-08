@@ -27,11 +27,17 @@ function listing_image_metabox ( $post ) {
 	
 	$banner_image = get_post_meta( $post->ID, '_banner_page', true );
 
-	$image_id = $banner_image['image'];
+    if( isset( $banner_image["texto"] ) ) {
+    	$texto = $banner_image["texto"];
+    }else{
+    	$texto = "";
+    }
 
-	if ( $banner_image && get_post( $image_id ) ) {
-		
-		$image_url = wp_get_attachment_url( $image_id );
+
+	if ( $banner_image ) {
+
+		$image_id = $banner_image['image'];
+    	$image_url = wp_get_attachment_url( $image_id );
 
 		$content .= '<img src="'.$image_url.'" style="width:100%;height:150px;border:0;" id="upload_image" />';
 		$content .= '<p class="hide-if-no-js"><a title="Escolher Imagem" href="javascript:;" id="upload_image_button"  data-uploader_title="Escolher Imagem" data-uploader_button_text="Escolher Imagem" class="button custom_upload_image_button">Escolher Imagem</a></p>';
@@ -44,7 +50,7 @@ function listing_image_metabox ( $post ) {
 
 	} else {
 
-		$content .= '<img src="'.$image_url.'" style="width:100%;height:200px;border:0;" id="upload_image" />';	
+		$content .= '<img src="" style="width:100%;height:200px;border:0;display:none;" id="upload_image" />';	
 		$content .= '<p class="hide-if-no-js"><a title="Escolher Imagem" href="javascript:;" id="upload_image_button"  data-uploader_title="Escolher Imagem" data-uploader_button_text="Escolher Imagem" class="button custom_upload_image_button">Escolher Imagem</a></p>';
 		$content .= '<label class="post-attributes-label">Título</label><input type="text" value="" name="_banner_titulo" style="width:100%;padding: 10px 5px;" ><br />';
 		$content .= '<label class="post-attributes-label">Subtítulo</label><input type="text" value="" name="_banner_subtitulo" style="width:100%;padding: 10px 5px;" ><br />';
@@ -55,7 +61,7 @@ function listing_image_metabox ( $post ) {
 
 	//Add Text Area com Editor
 	$settings = array( 'media_buttons' => false, 'tinymce' => true, 'textarea_rows'=> 6 );
-	wp_editor( $banner_image["texto"], "_banner_texto", $settings );
+	wp_editor( $texto , "_banner_texto", $settings );
 }
 
 add_action( 'save_post', 'banner_page_save', 10, 1 );
