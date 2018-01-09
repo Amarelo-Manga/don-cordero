@@ -26,19 +26,23 @@ get_header(); ?>
 		<div class="container">
 			<h3><?php echo $banner['titulo'] ?></h3>
 			<h4><?php echo $banner['subtitulo'] ?></h4>
-			<p class="col-6"><?php echo $banner['texto'] ?></p>
+			<p class="col-lg-6 col-md-6 col-sm-6"><?php echo $banner['texto'] ?></p>
 		</div>
 	</div>
-	<div id="primary" class="content-area container">
+	<div id="primary" class="content-area container-fluid">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-lg-6 col-md-6 col-sm-6">
 				<?php
-					the_title();
+					
 					the_content();
 				?>
 			</div>
-			<div class="col-4">
-				<?php the_post_thumbnail();  ?>
+			<div class="col-lg-5 col-md-5 col-sm-5">
+				<?php
+
+					the_post_thumbnail( 'full', ['class'=>'img-fluid']); 
+					
+				 ?>
 			</div>
 		</div>
 	</div><!-- #primary -->
