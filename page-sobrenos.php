@@ -74,6 +74,9 @@ get_header(); ?>
 			  			}
 			  		?>
 			    </div>
+			    <?php 
+			    	if( $count > 3 ){
+			    ?>
 			  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 			    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			    	<span class="sr-only">Previous</span>
@@ -82,6 +85,9 @@ get_header(); ?>
 			    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    	<span class="sr-only">Next</span>
 			  	</a>
+			  	  <?php 
+			  		}//end if count
+			  	?>
 			  	<?php 
 			  		for ($i = 0; $i < $count; $i++) {
 			  			$url_image = wp_get_attachment_url( $images[$i]['images'] ); 
