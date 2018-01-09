@@ -44,11 +44,13 @@ get_header(); ?>
 			</div>
 		</div>
 	</div><!-- #primary -->
-	<div id="galeria">
-		<?php
-			$images = get_post_meta( $post->ID, 'repeatable_images', true );
+	<?php
+		//Galeria
+		$images = get_post_meta( $post->ID, 'repeatable_images', true );
+		if( !empty( $images ) ){
 			$count = count( $images );
-		?>
+	?>
+	<div id="galeria">
 		<div class="container">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			  	<div class="carousel-inner">
@@ -99,6 +101,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<?php 
+		}//end if isset
+	?>
 </div><!-- .wrap -->
 
 <?php get_footer();
