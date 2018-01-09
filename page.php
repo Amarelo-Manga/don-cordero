@@ -60,13 +60,13 @@ get_header(); ?>
 			  			for ($i = 0; $i < $count; $i++) {
 			  					
 			  				$url_image = wp_get_attachment_url( $images[$i]['images'] ); 
-			  				$active = ( $i==0 ? ' ' : 'active' );
+			  				$active = ( $i==0 ? 'active' : '' );
 
 			  				if( ($i % 3 ) == 0 ){
 			  					echo '<div class="carousel-item '.$active.'">';
 			  				}
 			  				echo '<div class="image-item">';
-				  			echo '<img class="col-4" src="'.$url_image.'" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
+				  			echo '<img class="col-lg-4 col-md-4 col-sm-6" src="'.$url_image.'" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
 				  			echo '</div>';
 
 				  			if( ($i % 3 ) == 2 ){

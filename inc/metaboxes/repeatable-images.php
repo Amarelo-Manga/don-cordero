@@ -19,10 +19,6 @@ function repeatable_meta_box_display() {
 
 	wp_nonce_field( 'repeatable_meta_box_nonce', 'repeatable_meta_box_nonce' );
 ?>
-	<script type="text/javascript">
-
-	</script>
-  
 	<table id="repeatable-fieldset-one" width="100%">
 	<thead>
 		<tr>
