@@ -33,7 +33,7 @@ get_header(); ?>
 	</div>
 	<div id="primary" class="content-area container">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 mb-5">
+			<div class="col-lg-7 col-md-7 col-sm-7 mb-5">
 			 <?php the_post_thumbnail();  ?>
 				
 			</div>
