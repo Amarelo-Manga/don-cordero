@@ -110,15 +110,18 @@ section.happy_cortes_carta { margin-top: 37px;}
 .text_area .call_to_action{margin: 20px 0 ; display: table;}
 
 .img_area{color: #FFFFFF; float:left;padding: 0; height: 100%;  background-position: center; background-repeat: no-repeat; background-size: cover;}
+.color-form{color:#444e68;}
+div#wpcf7-f259-o1 {margin-left: 30%;}
 
 /*Footer*/
 footer li{ margin-bottom: 20px; list-style: none; margin-left: 0; padding-left: 0;}
 footer ul{padding-left: 0; }
 .icon_footer{width:20px; height: auto;    margin-right: 7px; float: left;}
 .address { background-color: #3b3b3f; color: #FFFFFF; padding: 50px 0; padding-left: 78px !important;}
-.col-lg-6.col-md-6.col-sm-6.maps {padding: 0;}
+.col-lg-6.col-md-6.col-sm-6.maps, .col-lg-12.col-md-12.col-sm-12.maps {padding: 0;}
 .address_data { display: table;}
-
+.address_data_contato{display: inline-block; margin-bottom: 20px;}
+.lista-contato{list-style: none; margin-left: -5%;}
 @media (max-width: 989px){
 .foto_dest img{display:none;}
 .panela{display:none;}
@@ -174,9 +177,10 @@ section.cozinha {margin-top: 65px;}
 
 /* Page */
 #galeria{background: #444e68;padding: 20px 0px;}
-#banner{background-size: cover;padding: 150px 0px;top: -60px;position: relative;}
-#banner h3{font-family: 'molleregular' !important;color: #f0c61b;font-weight: 100;font-size: 2.5em;}
-#banner h4{color: #fff;font-family: 'proxima_novaextrabold' !important;font-size: 2.5em;}
+.subtitulo-texto-paginas{color:#444e68 !important;}
+#banner{background-size: cover;padding: 150px 0px;top: -60px;position: relative; border: 10px solid #f0c61b;border-top: 0;border-left: 0;border-right: 0;}
+#banner h3, .titulos-texto-paginas{font-family: 'molleregular' !important;color: #f0c61b;font-weight: 100;font-size: 2.5em;}
+#banner h4, .subtitulo-texto-paginas{color: #fff;font-family: 'proxima_novaextrabold' !important;font-size: 2.3em;}
 #banner p{color:#fff;}
 #galeria img{width:100%;}
 #galeria .image-item{display: inline-block;cursor:pointer;}
