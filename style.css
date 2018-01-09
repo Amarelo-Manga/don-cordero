@@ -128,6 +128,11 @@ footer ul{padding-left: 0; }
 }
 
 
+/*Page Contato*/
+input[type="submit"]{background: #f50; color:#fff; border:0px; padding: 0px;}
+input[type="submit"]:hover{}
+
+
 @media (max-width: 575px){
 section.cozinha {margin-top: 65px;}
 .img_vinho{display:none;}
