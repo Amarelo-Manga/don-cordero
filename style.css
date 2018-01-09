@@ -41,7 +41,7 @@ a.more-link:hover {background-color: #F0C61B; text-decoration: none; color:#444E
 .social ul{padding:0;}
 .social li{float: left; list-style: none;border: 4px solid #FFF;}
 
-
+.fundo-eventos-texto{background-color:#444e68; padding: 10px; padding-bottom:60px; width: 80%;}
 /*Slideshow*/
 #slidehome{ background-size: cover; margin-top: -62px;}
 .n2-padding { overflow: hidden; max-height: 650px;}
