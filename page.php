@@ -29,7 +29,7 @@ get_header(); ?>
 			<p class="col-lg-6 col-md-6 col-sm-6"><?php echo $banner['texto'] ?></p>
 		</div>
 	</div>
-	<div id="primary" class="content-area container-fluid">
+	<div id="primary" class="content-area container">
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6">
 				<?php
@@ -41,7 +41,7 @@ get_header(); ?>
 				<?php
 
 					the_post_thumbnail( 'full', ['class'=>'img-fluid']); 
-					
+
 				 ?>
 			</div>
 		</div>
