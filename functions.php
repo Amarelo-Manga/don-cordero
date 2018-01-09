@@ -457,10 +457,16 @@ function twentyseventeen_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	if( is_page_template( 'contato' ) ){
+		wp_enqueue_style( 'font-awesome', get_theme_file_uri( 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' ), true );
+	}
+
 
 
 }
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
+
+
 
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
