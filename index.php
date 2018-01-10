@@ -11,7 +11,7 @@
 		<div class="col-lg-12 destaque_txt">
 			<div class="container">
 				<div class="row">
-					<?php $recent = new WP_Query("page_id=31"); while($recent->have_posts()) : $recent->the_post();?>
+					<?php $recent = new WP_Query("page_id=307"); while($recent->have_posts()) : $recent->the_post();?>
 					<div class="col-lg-5 col-md-12 col-sm-12 foto_dest"><img src="<?php echo get_the_post_thumbnail_url() ?>" alt="mesa do restaurante Don Cordero"/>
 					</div>
 					<div class="col-lg-7 col-md-12 col-sm-12 txt_dest">
@@ -87,7 +87,7 @@ $image_pratos = get_field('imagem_de_tipo_de_pratos', $taxonomy . '_' . $term_id
 						<h2><span class="hand">Aproveite seu</span> <br>
               HAPPY HOUR</h2>
               
-              <?php $recent = new WP_Query("page_id=60"); while($recent->have_posts()) : $recent->the_post();?>
+              <?php $recent = new WP_Query("page_id=310"); while($recent->have_posts()) : $recent->the_post();?>
               <?php the_content(); ?>
               <?php endwhile; ?>
               <br>
