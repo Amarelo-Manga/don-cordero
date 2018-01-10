@@ -26,18 +26,18 @@ get_header(); ?>
 		<div class="container">
 			<h3><?php echo $banner['titulo'] ?></h3>
 			<h4><?php echo $banner['subtitulo'] ?></h4>
-			<p class="col-lg-6 col-md-6 col-sm-6"><?php echo $banner['texto'] ?></p>
+			<p class="col-lg-6 col-md-6 col-sm-6 p-0"><?php echo $banner['texto'] ?></p>
 		</div>
 	</div>
 	<div id="primary" class="content-area container">
 		<div class="row">
-			<div class="content col-lg-6 col-md-6 col-sm-6">
+			<div class="content col-lg-6 col-md-7 col-sm-12">
 				<?php
 					
 					the_content();
 				?>
 			</div>
-			<div class="col-lg-5 col-md-5 col-sm-5 pos-pag">
+			<div class="col-lg-5 col-md-5 col-sm-12 pos-pag">
 				<?php
 
 					the_post_thumbnail( 'full', ['class'=>'img-fluid  ']); 
@@ -65,7 +65,7 @@ get_header(); ?>
 			  				if( ($i % 3 ) == 0 ){
 			  					echo '<div class="carousel-item '.$active.'">';
 			  				}
-			  				echo '<div class="image-item col-lg-4 col-md-4 col-sm-6">';
+			  				echo '<div class="image-item col-lg-4 col-md-4 col-sm-12 mb-2">';
 				  			echo '<img src="'.$url_image.'" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
 				  			echo '</div>';
 
@@ -96,7 +96,7 @@ get_header(); ?>
 			  			$content .=  '<div class="modal-dialog" role="document">';
 			  			$content .=  '<div class="modal-content">';
 				  		$content .=  '<div class="modal-body">';
-				  		$content .=  '<img class="col-4" src="'.$url_image.'" alt="First slide" >';
+				  		$content .=  '<img class="col-lg-12 col-md-12 col-sm-12" src="'.$url_image.'" alt="First slide" >';
 				  		$content .=  '</div>';	
 				  		$content .=  '</div>';
 			  			$content .=  '</div>';
