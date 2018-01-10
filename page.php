@@ -26,7 +26,7 @@ get_header(); ?>
 		<div class="container">
 			<h3><?php echo $banner['titulo'] ?></h3>
 			<h4><?php echo $banner['subtitulo'] ?></h4>
-			<p class="col-lg-6 col-md-6 col-sm-6"><?php echo $banner['texto'] ?></p>
+			<p><?php echo $banner['texto'] ?></p>
 		</div>
 	</div>
 	<div id="primary" class="content-area container">
