@@ -24,7 +24,7 @@ get_header(); ?>
 		$banner = get_post_meta( $post->ID, '_banner_page', true );
 		$image_url = wp_get_attachment_url( $banner['image'] ); 
 	?>
-	<div id="banner" style="background:url(<?php echo $image_url; ?>)">
+	<div id="banner" style="background-image:url(<?php echo $image_url; ?>)">
 		<div class="container">
 			<h3><?php echo $banner['titulo'] ?></h3>
 			<h4><?php echo $banner['subtitulo'] ?></h4>
