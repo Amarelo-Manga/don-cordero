@@ -28,7 +28,7 @@ get_header(); ?>
 		<div class="container">
 			<h3><?php echo $banner['titulo'] ?></h3>
 			<h4><?php echo $banner['subtitulo'] ?></h4>
-			<p class="col-lg-6 col-md-6 col-sm-6 p-0"><?php echo $banner['texto'] ?></p>
+			<p class="col-lg-6 col-md-6 col-sm-8 p-0"><?php echo $banner['texto'] ?></p>
 		</div>
 	</div>
 	<div id="primary" class="content-area container">
@@ -37,7 +37,7 @@ get_header(); ?>
 			 <?php the_post_thumbnail();  ?>
 				
 			</div>
-			<div class="col-lg-5 col-md-5 col-sm-5 mt-5">
+			<div class="col-lg-5 col-md-5 col-sm-5 m-top">
 				<?php			
 					the_content();
 				?>
