@@ -18,6 +18,7 @@
 						<h1><span class="hand">Conheça o </span><br>
               DON CORDERO</h1>
 						<?php the_content('saiba mais'); ?>
+							<a href="<?php the_permalink(31); ?>" class="call_to_action">Saiba Mais</a>
 						<?php endwhile; ?>
 
 					</div>
@@ -91,7 +92,7 @@ $image_pratos = get_field('imagem_de_tipo_de_pratos', $taxonomy . '_' . $term_id
               <?php the_content(); ?>
               <?php endwhile; ?>
               <br>
-						<a href="#" class="call_to_action">EM BREVE</a> </div>
+						<a href="<?php the_permalink(60); ?>" class="call_to_action">Saiba Mais</a> </div>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12" style="padding: 0; margin: 0;">
@@ -107,7 +108,7 @@ $image_pratos = get_field('imagem_de_tipo_de_pratos', $taxonomy . '_' . $term_id
 						<h2><span class="hand">Carta de</span><br>
               VINHOS</h2>
 					</div>
-					<!--div class="col-lg-4 col-md-5 col-sm-6"> <span class="call_to_action1">CONFIRA</span> </div-->
+					<div class="col-lg-4 col-md-5 col-sm-6"> <a href="<?php the_permalink()?>" class="call_to_action1">CONFIRA</a> </div>
 				</div>
 			</div>
 		</div>
@@ -137,14 +138,14 @@ $image_pratos = get_field('imagem_de_tipo_de_pratos', $taxonomy . '_' . $term_id
 				<div class="text_area col-lg-6 col-md-6 col-sm-6">
 					<h2> <span class="hand">Fogo</span> <br>
             DE CHÃO</h2>
-					<span class="call_to_action"> EM BREVE </span> </div>
+					<a href="<?php the_permalink()?>" class="call_to_action"> Saiba Mais </a> </div>
 				<div class="img_area col-lg-6 col-md-6 col-sm-6" style="background-image: url(<?php echo get_template_directory_uri()?>/img/thumb_fogo_de_chao.jpg);"></div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12 eventos_corporativos">
 				<div class="text_area col-lg-6 col-md-6 col-sm-6 ">
 					<h2> <span class="hand"> Eventos</span><br>
             CORPORATIVOS</h2>
-					<span class="call_to_action">EM BREVE </span> </div>
+					<a  href="<?php the_permalink()?>"class="call_to_action">Saiba Mais </a> </div>
 				<div class="img_area col-lg-6 col-md-6 col-sm-6" style="background-image: url(<?php echo get_template_directory_uri()?>/img/eventos_corporativos.jpg);"></div>
 			</div>
 		</div>
