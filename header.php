@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/stylesheet.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/proxima.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/proxima_regular.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
