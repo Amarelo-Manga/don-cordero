@@ -22,7 +22,7 @@
 <body <?php body_class();?>>
 <!--Área do header-->
 <header id="top" class="container">
-  <div class="row">
+  <div class="row m-right">
 <!-- BORDAS LAETAIS DOS ITENS ABAIXO TAMBÉM COMENTADOS NO CSS-->
     <div class="col-lg-5 col-md-4 col-sm-12 logo"><a href="http://doncordero.com.br/"><img src="<?php echo get_template_directory_uri()?>/img/logo_don_cordeiro.png" alt="Don Cordero"/></a></div>
     <div class="col-lg-7 col-md-8 col-sm-12 top_menu">
