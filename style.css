@@ -188,8 +188,9 @@ section.cozinha {margin-top: 65px;}
 .banner_cardapio{  background-image: url(img/bg_page_cardapio.jpg); background-size: cover; padding-top: 6.5rem; color: #FFFFFF;  margin-top: -118px; height: 419px;}
 
 /*sobre nos*/
-@media(max-width:1199px){}
-
+.m-top{margin-top:3rem !important;}
+@media(max-width:1199px){img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {width: 100%;height: auto;}.m-top{margin-top: 0 !important;}}
+@media(max-width: 991px){.col-lg-5.col-md-5.col-sm-3.m-top p {font-size: 15px;}} 
 
 
 /* Page */
@@ -205,3 +206,5 @@ section.cozinha {margin-top: 65px;}
 #galeria img{width:100%;}
 #galeria .image-item{display: inline-block;cursor:pointer;}
 #galeria .image-item:hover:after{content:" ";background: url('img/icon_search_image.png');width: 130px;height: 130px;position: absolute;display: block;margin-top: -250px;margin-left: 100px;}
+@media(max-width: 991px){.page-id-194 img.img-fluid.wp-post-image,.page-id-232 img.img-fluid.wp-post-image {margin-top: 206px;}}
+@media(max-width: 767px){.page-id-194 img.img-fluid.wp-post-image,.page-id-232 img.img-fluid.wp-post-image {margin-top: 0;}}
