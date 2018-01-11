@@ -16,7 +16,7 @@ h1,h2,h3{ font-family: 'proxima_novaextrabold' !important;}
 
 /*Call_to_action*/
 .call_to_action:hover{background-color:#f0c61b; text-decoration:none; color:#FFFFFF;}
-.call_to_action, .call_to_action2 { border:2px solid #f0c61b; padding:10px 20px; text-transform: uppercase; }
+.call_to_action, .call_to_action2 { border:2px solid #f0c61b; padding:10px 20px; text-transform: uppercase; margin-left:1rem;}
 .call_to_action1 {border:2px solid #FFFFFF;}
 .call_to_action, .call_to_action1 {color:#FFFFFF; padding:10px 20px;}
 .call_to_action a:hover, .call_to_action1 a:hover{color:#FFFFFF; background-color:#F0C61E !important; text-decoration:none;} 
