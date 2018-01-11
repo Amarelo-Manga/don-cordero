@@ -23,7 +23,7 @@ Domingos e Feriados das 12h00 às 18h00</div></li>
     </div>
   </div>
   <div class=" row amarelo_manga ">
-    <img src="<?php echo get_template_directory_uri()?>/img/amarelo-manga.png"  class="img-fluid ml-auto" alt="Logo Amarelo Manga Publicidade">
+    <a href="http://amarelomanga.com.br/" target="_blanck" alt="site amarelo manga" class="ml-auto"><img src="<?php echo get_template_directory_uri()?>/img/amarelo-manga.png"  class="img-fluid ml-auto" alt="Logo Amarelo Manga Publicidade"></a>
   </div>
 </footer>
 </body>
