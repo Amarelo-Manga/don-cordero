@@ -63,7 +63,9 @@ get_header(); ?>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.096742164812!2d-46.99310188417979!3d-23.056914584935654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf32887bac0acd%3A0x9ef84f07101e95c2!2sAv.+Aparecida+Tellau+Serafim%2C+1800+-+Lot.+Banespa%2C+Vinhedo+-+SP%2C+13280-000!5e0!3m2!1spt-BR!2sbr!4v1506021355697" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="row amarelo_manga"></div>
+  <div class="row amarelo_manga">
+  	    <a href="http://amarelomanga.com.br/" target="_blanck" class="ml-auto"><img src="<?php echo get_template_directory_uri()?>/img/amarelo-manga.png"  class="img-fluid ml-auto" alt="Logo Amarelo Manga Publicidade"></a>
+  </div>
 </footer>
 </body>
 
