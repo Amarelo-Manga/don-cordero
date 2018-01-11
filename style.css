@@ -121,6 +121,7 @@ footer ul{padding-left: 0; }
 .address_data_contato{display: inline-block; margin-bottom: 20px;}
 .lista-contato{list-style: none; margin-left: -5%;}
 .h-maps{height: 35vh;}
+.amarelo_manga{background-color:#fecc0c;height: 50px; padding: 13px;}
 @media (max-width: 989px){
 .foto_dest img{display:none;}
 .panela{display:none;}
