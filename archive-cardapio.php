@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 <!--Menu principal-->
-<div class="sombra_menu">
 
-
+  </div>
 	<!-- Destaque-->
 	<div class="container-fluid banner_cardapio">
 		<div class="container">
