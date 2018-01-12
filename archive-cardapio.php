@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 <!--Menu principal-->
 <div class="sombra_menu">
-
-
 	<!-- Destaque-->
 	<div class="container-fluid banner_cardapio">
 		<div class="container">
@@ -21,43 +19,45 @@
 			<div class="col-lg-12"></div>
 		</div>
 		<div id="cardapio" class="container">
-
-
-
 			<div id="Tabs1">
 				<ul>
-					<? 
-$terms = get_terms( 
-array( 
-'taxonomy' => 'tipos_de_pratos',  
-) ); 
-
-if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){  
-foreach ( $terms as $term ) {?>
-
-					<li><a href="#tabs-<? echo $term->term_id ?>"> <? echo $term->name ; ?></a>
-					</li>
-					<?  } } ?>
+					<?php
+						$args = array( 
+									'include'  => array(7,5,16,8), 
+									'taxonomy' => 'tipos_de_pratos', 
+									'orderby'  => 'include', 
+								);
+						$terms =  get_terms($args); 
+						// echo "<pre>";
+						// 	print_r( $terms );	
+						if ( !empty( $terms ) && !is_wp_error( $terms ) ){  
+							foreach ( $terms as $term ) {
+						echo '<li><a href="#tabs-'.$term->term_id.'">'.$term->name .'</a></li>';
+							} 
+						} 
+					?>
 				</ul>
-
-
-				<? 
-$terms_tab = get_terms( array( 'taxonomy' => 'tipos_de_pratos', 'hide_empty' => 'true',) ); 
-if ( ! empty( $terms_tab ) && ! is_wp_error( $terms_tab ) ){  
-foreach ( $terms_tab as $term_tab ) {?>
+				<?php  	
+					$args = array( 
+								'include'  => array(7,5,16,8), 
+								'taxonomy' => 'tipos_de_pratos', 
+								'orderby'  => 'include',
+								'hide_empty' => 'true'
+							);
+					$terms_tab = get_terms( $args ); 
+					if ( ! empty( $terms_tab ) && ! is_wp_error( $terms_tab ) ){  
+						foreach ( $terms_tab as $term_tab ){
+				?>
 				<!--tabs com o cardapio-->
 				<div id="tabs-<? echo $term_tab->term_id ?>">
 					<div class="container">
 						<div class="row">
-
-							<h3><? echo $term_tab->name ?></h3>
+							<h3><?php echo $term_tab->name ?></h3>
 						</div>
 						<div class="row">
 							<!-- Seleciona Slug da categoria e mostra todos os posts -->
-
-							<? $slug = $term_tab->term_id ?>
 							<?php
-
+							 $slug = $term_tab->term_id;
 							$posts = get_posts( array(
 								'post_type' => 'cardapio',
 								'numberposts' => -1,
@@ -72,7 +72,6 @@ foreach ( $terms_tab as $term_tab ) {?>
 							) );
 							if ( $posts ): ?>
 							<?php foreach( $posts as $post ): setup_postdata( $post );?>
-
 							<div class="col-lg-5 mr-3 mb-3 col-md-12 col-sm-12 item">
 								<div class="thumb_page">
 									<? $slug; ?>
@@ -86,11 +85,7 @@ foreach ( $terms_tab as $term_tab ) {?>
 							<?php endforeach; ?>
 							<?php wp_reset_postdata(); ?>
 							<?php endif; ?>
-
 						</div>
-
-
-
 					</div>
 				</div>
 				<?  } } ?>
@@ -104,4 +99,4 @@ foreach ( $terms_tab as $term_tab ) {?>
 		} );
 	</script>
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>
