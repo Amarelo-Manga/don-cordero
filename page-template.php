@@ -6,8 +6,7 @@
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
  * different template.
- * Template Name: Sobre Nós
- *
+ * Template name: Template Pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -28,19 +27,23 @@ get_header(); ?>
 		<div class="container">
 			<h3><?php echo $banner['titulo'] ?></h3>
 			<h4><?php echo $banner['subtitulo'] ?></h4>
-			<p class="col-lg-5 col-md-6 col-sm-8 p-0"><?php echo $banner['texto'] ?></p>
+			<p class="col-lg-6 col-md-6 col-sm-6 p-0"><?php echo $banner['texto'] ?></p>
 		</div>
 	</div>
 	<div id="primary" class="content-area container">
 		<div class="row">
-			<div class="col-lg-7 col-md-7 col-sm-12 mb-5">
-			 <?php the_post_thumbnail();  ?>
-				
-			</div>
-			<div class="col-lg-5 col-md-5 col-sm-12 m-top">
-				<?php			
+			<div class="content col-lg-6 col-md-7 col-sm-12">
+				<?php
+					
 					the_content();
 				?>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-12 pos-pag">
+				<?php
+
+					the_post_thumbnail( 'full', ['class'=>'img-fluid  ']); 
+
+				 ?>
 			</div>
 		</div>
 	</div><!-- #primary -->
@@ -63,9 +66,8 @@ get_header(); ?>
 			  				if( ($i % 3 ) == 0 ){
 			  					echo '<div class="carousel-item '.$active.'">';
 			  				}
-
-				  			echo '<div class="image-item col-lg-4 col-md-4 col-sm-12 mb-2" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
-				  			echo '<img src="'.$url_image.'">';
+			  				echo '<div class="image-item col-lg-4 col-md-4 col-sm-12 mb-2">';
+				  			echo '<img src="'.$url_image.'" alt="First slide" data-toggle="modal" data-target="#modal'.$images[$i]['images'].'">';
 				  			echo '</div>';
 
 				  			if( ($i % 3 ) == 2 ){
@@ -85,7 +87,7 @@ get_header(); ?>
 			    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    	<span class="sr-only">Next</span>
 			  	</a>
-			  	  <?php 
+			  	<?php 
 			  		}//end if count
 			  	?>
 			  	<?php 
@@ -95,7 +97,7 @@ get_header(); ?>
 			  			$content .=  '<div class="modal-dialog" role="document">';
 			  			$content .=  '<div class="modal-content">';
 				  		$content .=  '<div class="modal-body">';
-				  		$content .=  '<img class="col-lg-12 col-md-12 col-sm-12 src="'.$url_image.'" alt="First slide" >';
+				  		$content .=  '<img class="col-lg-12 col-md-12 col-sm-12" src="'.$url_image.'" alt="First slide" >';
 				  		$content .=  '</div>';	
 				  		$content .=  '</div>';
 			  			$content .=  '</div>';

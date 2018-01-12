@@ -15,16 +15,16 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/stylesheet.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/proxima.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/proxima_regular.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body <?php body_class();?>>
 <!--Área do header-->
 <header id="top" class="container">
-  <div class="row">
+  <div class="row m-right">
 <!-- BORDAS LAETAIS DOS ITENS ABAIXO TAMBÉM COMENTADOS NO CSS-->
-    <div class="col-lg-5 col-md-4 col-sm-12 logo"><a href="http://doncordero.com.br/"><img src="<?php echo get_template_directory_uri()?>/img/logo_don_cordeiro.png" alt="Don Cordero"/></a></div>
+    <div class="col-lg-5 col-md-4 col-sm-12 logo"><a href="<?php echo home_url(); ?>" ><img src="<?php echo get_template_directory_uri()?>/img/logo_don_cordeiro.png" alt="Don Cordero"/></a></div>
     <div class="col-lg-7 col-md-8 col-sm-12 top_menu">
       <div class="phone_delivery col-lg-3 col-md-3 col-sm-3"> <!--DELIVERY <b><br>19 3826.2301</b--></div>
       <div class="ifood col-lg-2 col-md-2 col-sm-2"><!--img src="<?php //echo get_template_directory_uri()?>/img/ifood.png"--></div>
