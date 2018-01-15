@@ -90,13 +90,13 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12" style="padding: 0; margin: 0;">
-				<div class="cortes_area row">
+				<div class="cortes_area row m-right">
 					<div class="col-lg-8 col-md-7 col-sm-6">
 						<h2><span class="hand">Cortes</span><br>ESPECIAIS</h2>
 					</div>
 					<!--div class="col-lg-4 col-md-5 col-sm-6"> <span class="call_to_action1">CONFIRA</span> </div-->
 				</div>
-				<div class="vinho_area row"> <img src="<?php echo get_template_directory_uri()?>/img/vinho.png" class="img_vinho d-lg-block  d-md-none d-sm-none" alt="vinho">
+				<div class="vinho_area row m-right "> <img src="<?php echo get_template_directory_uri()?>/img/vinho.png" class="img_vinho d-lg-block  d-md-none d-sm-none" alt="vinho">
 					<div class="col-lg-8 col-md-7 col-sm-6">
 						<!--h2><span class="hand">Carta de</span><br>VINHOS</h2-->
               			<h2><span class="hand">Adega de</span><br>VINHOS</h2>
