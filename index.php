@@ -147,7 +147,7 @@
 <section class="cozinha">
 	<div class="container-fluid">
 		<div class="container">
-			<div class="row" style="display: flex;">
+			<div class="row pt-3" style="display: flex;">
 				<div class="col-lg-8">
 					<h2><span class="hand">Uma cozinha com</span> <br>INGREDIENTES SELECIONADOS</h2>
 					<?php $recent = new WP_Query("page_id=62"); while($recent->have_posts()) : $recent->the_post();?>
