@@ -38,8 +38,7 @@ a.more-link:hover {background-color: #F0C61B; text-decoration: none; color:#444E
 /*Menu*/
 .navbar-light .navbar-toggler{background: #fff;}
 .collapse.show {display: block; background: #333;}
-/*.sombra_menu { background-image: url(img/shadow_menu.png); background-repeat: no-repeat;  background-size: 100%; width: 100%; position: relative; z-index: 1; height:117px; margin: -27px 0 -52px; padding: 0 0 10px;}*/
-.sombra_menu{width: 100%;position: relative;z-index: 1;height: 0;margin: -32px 0 60px; /*box-shadow: 0 33px 40px 36px rgba(0,0,0,0.65);*/}
+.sombra_menu{width: 100%;position: relative;z-index: 1;height: 0;margin: -32px 0 60px;}
 .sombra_menu .container {padding: 0;}
 .link_home {margin-left: 0 !important;}
 #main_menu {position: relative; z-index: 10000; margin-top: 0px;}
@@ -53,6 +52,7 @@ button.menu-toggle {display: none;}
 .navbar-light .navbar-toggler-icon{background-color: #ffffff;}
 .navbar a{padding:0 !important;}
 .navbar-toggle {/* display: none; */  z-index: 9998;position: relative; border:3px solid #fff;}
+.m-right{margin-right: 0px !important;}
 /*Destaque*/
 .foto_dest img { border: 8px solid #ffffff; margin-top: -74px; margin-bottom: 20px; box-shadow: 2px 2px 8px #ccc;}
 .txt_dest{padding-top: 50px; padding-left: 50px; margin-bottom: 1rem;}
@@ -69,15 +69,16 @@ section.happy_cortes_carta { margin-top: 37px;}
 #happy_hour{background-image: url(img/happyhour.jpg); background-size: cover; display: flex; align-items: center; color: #FFFFFF; padding: 40px; text-align: center;}
 #happy_hour .call_to_action{ margin: 1.5rem auto 0; display: table;}
 .content_happy{display: flex; align-items: center;}
-.cortes_area{background-image: url(img/bg_corte.jpg); height: 198px; background-size: cover; background-position:center; padding-left: 1.5rem; padding-top: 1.5rem; margin: 0; display: flex; align-items: center;}
+.cortes_area{background-image: url(img/bg_corte.jpg); height: 198px; background-size: cover; background-position:center; padding-left: 1.5rem; padding-top: 1.5rem; margin-right: 0 !important; display: flex; align-items: center;}
 .cortes_area .hand{ color: #FFFFFF;}
-.vinho_area{background-color: #444e68; position: relative; color: #ffffff; height: 217px; padding-left: 1.5rem; padding-top: 1.5rem; margin: 0; display: flex; align-items: center;}
+.vinho_area{background-color: #444e68; position: relative; color: #ffffff; height: 217px; padding-left: 1.5rem; padding-top: 1.5rem; margin-right: 0!important; display: flex; align-items: center;}
 .img_vinho {position: absolute;  top: -44px; left:20%}
 .vinho_area .call_to_action1,.cortes_area .call_to_action1{font-size: 21px;}
 .banner_delivery{ background-image:url(img/bg_caseiro.jpg); background-size: cover; color: #FFFFFF; position: relative; min-height: 400px; display: flex;}
 .text_delivery{display: flex; align-items: center;}
 .text_delivery .call_to_action{display: table; margin: 30px 0;}
-.panela{position:absolute; left:0; top: -69px;; z-index: 4;}
+.panela{position:absolute; left:0; top: -45px; z-index: 4;}
+@media(max-width: 1190px){.panela{top:-9px; width: 310px;}.call_to_action1{padding: 10px 13px;}.vinho_area{height: 241px;}.img_vinho {top: -19px;left: 3%;}}
 .fogo_chao, .eventos_corporativos { margin: 40px 0;}
 .text_area{background-color:#444e68; float: left; padding: 15.5% 0px 15.5% 18px; color: #FFF; }
 .text_area.col-lg-6.col-md-6.col-sm-6 { padding-left: 37px;}
@@ -106,7 +107,7 @@ input[type="text"], input[type="tel"], input[type="email"], textarea{border-top:
 .txt-color{color:#444e68;}
 div#wpcf7-f259-o1 {margin-left: 30%;margin-top: 30px;}
 @media(max-width: 991px){div#wpcf7-f259-o1 {margin-left: 0px;}.address{padding-left: 45px !important;}}
-@media (max-width: 575px){section.cozinha {margin-top: 65px;}.img_vinho{display:none;}.fogo_chao, .eventos_corporativos {margin: 116px 0;}.fale_conosco, .ifood, .phone_delivery{text-align:center !important; margin-bottom:20px; border-right:0 !important;}.logo img { width: 80%; margin: auto;}.social ul{ width: 119px; margin: auto;}.m-right{margin-right: 0px !important;}.address_data_contato {width:auto;}}
+@media (max-width: 575px){section.cozinha {margin-top: 65px;}.img_vinho{display:none;}.fogo_chao, .eventos_corporativos {margin: 116px 0;}.fale_conosco, .ifood, .phone_delivery{text-align:center !important; margin-bottom:20px; border-right:0 !important;}.logo img { width: 80%; margin: auto;}.social ul{ width: 119px; margin: auto;}.cortes_area,.vinho_area{margin-right: 0px !important;}.address_data_contato {width:auto;}}
 @media(max-width:620px){.address{padding-left: 10px !important;}.address h2{text-align: center;}.address_data_contato {display: flex;}div#wpcf7-f259-o1{margin-left: 0;}}
 @media(max-width: 354px){input[type="text"], input[type="tel"], input[type="email"], textarea{width: 255px;}}
 /* Cardápio */
@@ -149,5 +150,8 @@ div#wpcf7-f259-o1 {margin-left: 30%;margin-top: 30px;}
 #galeria img{width:100%;}
 #galeria .image-item{display: inline-block;cursor:pointer;}
 #galeria .image-item:hover:after{content:" ";background: url('img/icon_search_image.png');width: 130px;height: 130px;position: absolute;display: block;margin-top: -250px;margin-left: 100px;}
+.bg-404{background-image: url(img/don-404.jpg); background-size: cover; background-repeat: no-repeat; height:80vh;}
+.txt-error{font-size: 3.5rem;font-weight: 300;line-height: 1.1; /* text-align: center; */ margin-top: 3rem; margin-bottom: 2rem;}
+/* .btn-error{margin-left: 25%;} */
 @media(max-width: 991px){.page-id-194 img.img-fluid.wp-post-image,.page-id-232 img.img-fluid.wp-post-image {margin-top: 206px;}.page-id-336 #banner p { padding-right: 0px !important;}}
 @media(max-width: 767px){.page-id-194 img.img-fluid.wp-post-image,.page-id-232 img.img-fluid.wp-post-image {margin-top: 0;}}
