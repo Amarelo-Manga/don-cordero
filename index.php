@@ -90,13 +90,13 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-sm-12" style="padding: 0; margin: 0;">
-				<div class="cortes_area row m-right">
+				<div class="cortes_area row ">
 					<div class="col-lg-8 col-md-7 col-sm-6">
 						<h2><span class="hand">Cortes</span><br>ESPECIAIS</h2>
 					</div>
-					<!--div class="col-lg-4 col-md-5 col-sm-6"> <span class="call_to_action1">CONFIRA</span> </div-->
+					<div class="col-lg-4 col-md-5 col-sm-6"> <a href="<?php the_permalink(336)?>" class="call_to_action1">CONFIRA</a> </div>
 				</div>
-				<div class="vinho_area row m-right "> <img src="<?php echo get_template_directory_uri()?>/img/vinho.png" class="img_vinho d-lg-block  d-md-none d-sm-none" alt="vinho">
+				<div class="vinho_area row "> <img src="<?php echo get_template_directory_uri()?>/img/vinho.png" class="img_vinho d-lg-block  d-md-none d-sm-none" alt="vinho">
 					<div class="col-lg-8 col-md-7 col-sm-6">
 						<!--h2><span class="hand">Carta de</span><br>VINHOS</h2-->
               			<h2><span class="hand">Adega de</span><br>VINHOS</h2>
@@ -147,7 +147,7 @@
 <section class="cozinha">
 	<div class="container-fluid">
 		<div class="container">
-			<div class="row pt-3" style="display: flex;">
+			<div class="row pt-4" style="display: flex;">
 				<div class="col-lg-8">
 					<h2><span class="hand">Uma cozinha com</span> <br>INGREDIENTES SELECIONADOS</h2>
 					<?php $recent = new WP_Query("page_id=62"); while($recent->have_posts()) : $recent->the_post();?>

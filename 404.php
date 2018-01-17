@@ -12,23 +12,16 @@
 
 get_header(); ?>
 
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<section class="container-fluid bg-404">
+		<div class="row">
+			<div class="col-lg-6 col-md-0 col-sm-0"></div>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentyseventeen' ); ?></h1>
-				</header><!-- .page-header -->
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyseventeen' ); ?></p>
+			<div class="col-lg-6 col-md-12 col-sm-12 ">
+				<h4 class="hand txt-error">Página não <br> Encontrada</h4>
 
-					<?php get_search_form(); ?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
+				<a class="more-link text-white btn-error"  href="<?php echo home_url(); ?>" alt="voltar para página principal do site">Volte para a página inicial</a>
+			</div>
+		</div>
+</section>
 
 <?php get_footer();
