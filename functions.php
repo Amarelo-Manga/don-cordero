@@ -457,7 +457,7 @@ function twentyseventeen_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	if( is_page_template( 'contato' ) ){
+	if( is_page( 'contato' ) ){
 		wp_enqueue_style( 'font-awesome', get_theme_file_uri( 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' ), true );
 	}
 
@@ -595,6 +595,17 @@ require get_template_directory() . '/inc/metaboxes/banner-page.php';
 require get_template_directory() . '/inc/metaboxes/repeatable-images.php';
 
 
-
+/**
+* Style Minify
+**/
+function style_or_min_style( $stylesheet_uri, $stylesheet_dir_uri ) {
+    $located = locate_template( 'style.min.css' );
+	if ($located != '' ) {
+	    return trailingslashit( $stylesheet_dir_uri ) . 'style.min.css';
+	} else {
+	   return trailingslashit( $stylesheet_dir_uri ) . 'style.css';
+	}
+}
+add_filter( 'stylesheet_uri', 'style_or_min_style', 10, 2);
 
 
