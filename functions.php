@@ -461,8 +461,6 @@ function twentyseventeen_scripts() {
 		wp_enqueue_style( 'font-awesome', get_theme_file_uri( 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' ), true );
 	}
 
-
-
 }
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
 
@@ -576,12 +574,15 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 
-
-
 /**
  * Metabox Upload de Images for Metabox
  */
-wp_enqueue_script('metabox-imageUpload', get_template_directory_uri().'/js/metaboxes.min.js');
+if ( is_admin() ) {
+	wp_enqueue_script('metabox-imageUpload', get_theme_file_uri( '/js/metaboxes.min.js' ) );
+}
+
+
+
 
 /**
  * Metaboxes Banner
