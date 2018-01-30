@@ -9,13 +9,11 @@
 <?php wp_head(); ?>
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.css" >
+<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css" >
 
 <!--CSS de fontes -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/stylesheet.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/proxima.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/fonts/proxima_regular.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="<?php echo get_template_directory_uri()?>/jQueryAssets/jquery.ui.min.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -39,8 +37,6 @@
     </div>
 
 </header>
-
-
 <!--Menu principal-->
 <div class="sombra_menu">
  
