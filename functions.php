@@ -441,16 +441,11 @@ function twentyseventeen_scripts() {
 	);
 
 	if ( has_nav_menu( 'top' ) ) {
-		wp_enqueue_script( 'twentyseventeen-navigation', get_theme_file_uri( '/assets/js/main.min.js' ), array( 'jquery' ), '1.0', true );
 		$twentyseventeen_l10n['expand']         = __( 'Expand child menu', 'twentyseventeen' );
 		$twentyseventeen_l10n['collapse']       = __( 'Collapse child menu', 'twentyseventeen' );
 		$twentyseventeen_l10n['icon']           = twentyseventeen_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
 	}
-
-	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/main.min.js' ), array( 'jquery' ), '1.0', true );
-
-	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/main.min.js' ), array( 'jquery' ), '2.1.2', true );
-
+	
 	wp_localize_script( 'twentyseventeen-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $twentyseventeen_l10n );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
