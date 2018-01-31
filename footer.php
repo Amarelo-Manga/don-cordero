@@ -29,19 +29,8 @@ Domingos e Feriados das 12h00 às 18h00</div></li>
 </body>
 <?php wp_footer(); ?>
 
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107891208-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-107891208-1');
-</script>
-
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script src="<?php echo get_template_directory_uri()?>/jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+    <script src="<?php echo get_template_directory_uri()?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri()?>/jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script><!--CSS de fontes -->
+	<link href="<?php echo get_template_directory_uri()?>/jQueryAssets/jquery.ui.min.css" rel="stylesheet" type="text/css">
 </html>
