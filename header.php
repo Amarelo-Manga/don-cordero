@@ -28,8 +28,8 @@
     <div class="col-lg-7 col-md-8 col-sm-12 top_menu">
       <div class="phone_delivery col-lg-3 col-md-3 col-sm-3"> <!--DELIVERY <b><br>19 3826.2301</b--></div>
       <div class="ifood col-lg-2 col-md-2 col-sm-2"><!--img src="<?php //echo get_template_directory_uri()?>/img/ifood.png"--></div>
-      <div class="fale_conosco col-lg-4 col-md-3 col-sm-3"><!--FALE CONOSCO--></div>
-      <div class="social col-lg-3 col-md-4 col-sm-4">
+      <div class="fale_conosco col-lg-3 col-md-3 col-sm-3"><!--FALE CONOSCO--></div>
+      <div class="social col-lg-4 col-md-4 col-sm-4">
         <ul>
           <li><a href="https://www.facebook.com/doncorderorestaurante/" target="blank"><img src="<?php echo get_template_directory_uri()?>/img/face.png"/></a></li>
           <li><a href="https://www.instagram.com/doncordero_restaurante/" target="blank"><img src="<?php echo get_template_directory_uri()?>/img/icon_instagram.png"/></a></li>
@@ -37,23 +37,17 @@
         </div>
       </div>
     </div>
-
 </header>
 <!--Menu principal-->
 <div class="sombra_menu">
- 
   <div class="container">
-   <nav id="main_menu" class="navbar navbar-expand-lg navbar-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-
-	<?php wp_nav_menu( array('theme_location' => 'top', 'menu_class'=> 'col-lg-12 navbar-nav',   'menu_id'        => 'top-menu',) ); ?>
-	  
-	  
-  </div>
-</nav>
+   		<nav id="main_menu" class="navbar navbar-expand-lg navbar-light">
+	 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  			</button>
+	  			<div class="collapse navbar-collapse" id="navbarNav">
+					<?php wp_nav_menu( array('theme_location' => 'top', 'menu_class'=> 'col-lg-12 navbar-nav',   'menu_id'        => 'top-menu',) ); ?>	  
+  				</div>
+		</nav>
    </div>
-
 </div>
