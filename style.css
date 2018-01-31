@@ -118,7 +118,7 @@ section.happy_cortes_carta { margin-top: 37px;}
 .text_delivery{display: flex; align-items: center;}
 .text_delivery .call_to_action{display: table; margin: 30px 0;}
 .panela{position:absolute; left:0; top: -45px; z-index: 4;}
-@media(max-width: 1190px){.panela{top:-9px; width: 310px;}.call_to_action1{padding: 10px 13px;}.vinho_area{height: 241px;}.img_vinho {top: -19px;left: 3%;}}
+@media(max-width: 1190px){.panela{top:-9px; width: 310px;}.call_to_action1{padding: 10px 13px;}.vinho_area{height: 241px;}.img_vinho {top: -19px;left: 3%;}.vinho_area .call_to_action1{font-size: 18px;}}
 .fogo_chao, .eventos_corporativos { margin: 40px 0;}
 .text_area{background-color:#444e68; float: left; padding: 15.5% 0px 15.5% 18px; color: #FFF; }
 .text_area.col-lg-6.col-md-6.col-sm-6 { padding-left: 37px;}
@@ -147,7 +147,7 @@ input[type="text"], input[type="tel"], input[type="email"], textarea{border-top:
 .txt-color{color:#444e68;}
 div#wpcf7-f259-o1 {margin-left: 30%;margin-top: 30px;}
 @media(max-width: 991px){div#wpcf7-f259-o1 {margin-left: 0px;}.address{padding-left: 45px !important;}}
-@media (max-width: 575px){section.cozinha {margin-top: 65px;}.img_vinho{display:none;}.fogo_chao, .eventos_corporativos {margin: 116px 0;}.fale_conosco, .ifood, .phone_delivery{text-align:center !important; margin-bottom:20px; border-right:0 !important;}.logo img { width: 80%; margin: auto;}.social ul{ width: 119px; margin: auto;}.cortes_area,.vinho_area{margin-right: 0px !important;}.address_data_contato {width:auto;}}
+@media (max-width: 575px){section.cozinha {margin-top: 65px;}.img_vinho{display:none;}.fogo_chao, .eventos_corporativos {margin: 116px 0;}.fale_conosco, .ifood, .phone_delivery{text-align:center !important; margin-bottom:5px; border-right:0 !important;}.logo img { width: 80%; margin: auto;}.social ul{ width: 119px; margin: auto;}.cortes_area,.vinho_area{margin-right: 0px !important;}.address_data_contato {width:auto;}}
 @media(max-width:620px){.address{padding-left: 10px !important;}.address h2{text-align: center;}.address_data_contato {display: flex;}div#wpcf7-f259-o1{margin-left: 0;}}
 @media(max-width: 354px){input[type="text"], input[type="tel"], input[type="email"], textarea{width: 255px;}}
 /* Cardápio */
@@ -174,7 +174,7 @@ div#wpcf7-f259-o1 {margin-left: 30%;margin-top: 30px;}
 .m-top{margin-top:3rem !important;}
 @media(max-width:1199px){img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {width: 100%;height: auto;}.m-top{margin-top: 0 !important;}}
 @media(max-width: 991px){.col-lg-5.col-md-5.col-sm-3.m-top p {font-size: 15px;}} 
-@media(max-width: 454px){.social{ margin-top: -70px;}}
+@media(max-width: 454px){.social{ margin-top: -70px;}.txt_dest {padding-top: 15px;}}
 /* Page */
 /* pagina 194 adega,  pagina 60happy hour */
 .page-id-194 .content, .page-id-60 .content{background-color: white;margin-top: -10%;border-radius: 15px;z-index: 1;padding-top: 60px; padding-left: 20px;}
