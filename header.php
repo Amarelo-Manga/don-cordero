@@ -2,19 +2,21 @@
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="<?php bloginfo( 'charset' ); ?>"><!-- 
+<meta property="og:image" content="http://doncordero.com.br/desenv/wp-content/themes/don-cordero/img/logo_don_cordeiro.png" /> -->
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
 <?php wp_head(); ?>
-
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css" >
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107891208-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!--CSS de fontes -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="<?php echo get_template_directory_uri()?>/jQueryAssets/jquery.ui.min.css" rel="stylesheet" type="text/css">
-
+  gtag('config', 'UA-107891208-1');
+</script>
 </head>
 
 <body <?php body_class();?>>
