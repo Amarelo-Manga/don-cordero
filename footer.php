@@ -28,8 +28,6 @@ Domingos e Feriados das 12h00 às 18h00</div></li>
 </footer>
 </body>
 <?php wp_footer(); ?>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php echo get_template_directory_uri()?>/js/bootstrap.min.js"></script>
     <script src="<?php echo get_template_directory_uri()?>/jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script><!--CSS de fontes -->
 	<link href="<?php echo get_template_directory_uri()?>/jQueryAssets/jquery.ui.min.css" rel="stylesheet" type="text/css">
